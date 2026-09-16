@@ -11,9 +11,12 @@ if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
 # Ensure SQLite database exists on cloud runtime
-db_path = os.path.join(os.path.dirname(__file__), "..", "data", "analytics.db")
+db_path = os.path.join(ROOT_DIR, "data", "analytics.db")
+seed_script = os.path.join(ROOT_DIR, "seed_database.py")
+
 if not os.path.exists(db_path):
-    subprocess.run(["python", "seed_database.py"], check=True)
+    subprocess.run([sys.executable, seed_script], cwd=ROOT_DIR, check=True)
+    
 
 import streamlit as st
 import uuid
