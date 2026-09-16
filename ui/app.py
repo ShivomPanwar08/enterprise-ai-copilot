@@ -1,11 +1,19 @@
 import sys
 import os
+from dotenv import load_dotenv
+load_dotenv()  # Load environment variables from .env file
 
-# Project root ko sys.path me add kar rahe hain
+import subprocess 
+
+# Adding the root directory to sys.path for module imports
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
+# Ensure SQLite database exists on cloud runtime
+db_path = os.path.join(os.path.dirname(__file__), "..", "data", "analytics.db")
+if not os.path.exists(db_path):
+    subprocess.run(["python", "seed_database.py"], check=True)
 
 import streamlit as st
 import uuid
