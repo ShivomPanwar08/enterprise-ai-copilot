@@ -1,0 +1,5 @@
+ai_copilot_env/ 
+__pycache__/ 
+*.pyc 
+.env 
+data/analytics.db 

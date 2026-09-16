@@ -1,0 +1,19 @@
+# LangChain & LangGraph Ecosystem
+langchain-core
+langchain-google-genai
+langgraph
+
+# Google GenAI SDK
+google-genai
+
+# Frontend & Interface
+streamlit
+
+# Data & Machine Learning Stack
+pandas
+numpy
+scikit-learn
+joblib
+
+# Environment & Utilities
+python-dotenv
