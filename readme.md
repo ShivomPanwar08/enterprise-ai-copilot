@@ -1,10 +1,10 @@
-# Enterprise Self-Healing AI Data Copilot 🤖
+# Enterprise Self-Healing AI Data Copilot 
 
 An autonomous, multi-agent enterprise copilot engineered to bridge structured SQL databases and predictive machine learning models. Built with **LangGraph**, **Gemini**, and **Streamlit**, the system features dynamic schema introspection, stateful conversational memory, parallel tool execution, and an automated self-healing execution loop that resolves schema drift and hallucinated query errors without human intervention.
 
 ---
 
-## 🌟 Key Architecture & Capabilities
+##  Key Architecture & Capabilities
 
 * **Dynamic Schema Introspection:** Evaluates live SQLite table definitions (`customers`, `subscriptions`, `service_usage`) on demand rather than relying on static system prompts.
 * **Hybrid Multi-Hop Reasoning:** Seamlessly merges multi-table SQL aggregations with pre-trained Scikit-Learn predictive churn pipelines in a single reasoning cycle.
@@ -14,7 +14,7 @@ An autonomous, multi-agent enterprise copilot engineered to bridge structured SQ
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Agent Orchestration:** LangGraph, LangChain Core
 * **Language Model:** Google Gemini (`gemini-flash-3.1-lite` / function calling)
@@ -24,7 +24,7 @@ An autonomous, multi-agent enterprise copilot engineered to bridge structured SQ
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```text
 SELF HEALING COPILOT/
